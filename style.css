@@ -411,3 +411,93 @@ body.escuro .selo-projeto {
     background-color: #8b5cf6;
     color: #ffffff;
 }
+
+
+@media (max-width: 768px) {
+    .topo-portfolio {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .apresentacao {
+        flex: none;
+        width: 100%;
+    }
+
+    .galeria-desenhos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 14px;
+        padding: 15px 15px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .conteudo {
+        padding: 25px 15px;
+    }
+
+    .secao {
+        padding: 30px 10px;
+    }
+
+    .pokebola {
+        width: 180px;
+        height: 180px;
+    }
+
+    .pokebola-meio {
+        width: 84px;
+        height: 84px;
+    }
+
+    .pokebola-foto {
+        width: 70px;
+        height: 70px;
+    }
+
+    .apresentacao h2 {
+        font-size: 20px;
+    }
+
+    .iconeHtml, .iconeCss, .iconeJs, .iconeAftereffects {
+        width: 75px;
+        height: 75px;
+    }
+
+    .desenhos {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .item-galeria img {
+        height: 135px;
+    }
+
+    .selo-projeto {
+        font-size: 11px;
+        padding: 2px 6px;
+    }
+
+    .legenda-projeto {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 380px) {
+    .galeria-desenhos {
+        grid-template-columns: 1fr;
+    }
+}
